@@ -1,110 +1,558 @@
-<!-- Utilizzo di framework : Bulma-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class=" fonts-loaded"><head>
+    <meta name="generator" content="Hugo 0.142.0">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="src/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Nicola Annunziata">
+    <meta name="keywords" content="Nicola Annunziata">
+    <meta name="author" content="Nicola Annunziata">
+
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-N9L4RRWSGTM-N9L4RRWS"></script><script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            "gtm.start": new Date().getTime(),
+            event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src =
+            "https://www.googletagmanager.com/gtm.js?id=GTM-N9L4RRWS" +
+            i +
+            dl;
+        f.parentNode.insertBefore(j, f);
+    })(
+        window,
+        document,
+        "script",
+        "dataLayer",
+        "GTM-N9L4RRWS"
+    );
+</script>
+
+
+    <title>Nicola Annunziata | Software Engineer</title>
+    <link rel="icon" href="src/assets/logonicola.png">
+    <style>
+
+        .rad-fade-in {
+            will-change: opacity, transform;
+            animation-name: rad-fade-in-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-fallback {
+            0% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fonts-loaded .rad-fade-in.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+        }
+
+        .fonts-loaded .rad-fade-in.rad-animate {
+            animation-name: rad-fade-in;
+            animation-duration: 1.1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        .rad-fade-in-long {
+            will-change: opacity, transform;
+            animation-name: rad-fade-in-long-fallback;
+            animation-duration: 8s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-long-fallback {
+            0% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fonts-loaded .rad-fade-in-long.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+        }
+
+        .fonts-loaded .rad-fade-in-long.rad-animate {
+            animation-name: rad-fade-in-long;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-long {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        .rad-fade-down {
+            will-change: opacity, transform;
+            animation-name: rad-fade-down-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            transform: translateY(-30px);
+        }
+
+        @keyframes rad-fade-down-fallback {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            75% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fonts-loaded .rad-fade-down.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        .fonts-loaded .rad-fade-down.rad-animate {
+            animation-name: rad-fade-down;
+            animation-duration: 1.1s;
+        }
+
+        @keyframes rad-fade-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        .rad-scale-down {
+            will-change: opacity, transform;
+            animation-name: rad-scale-down-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            transform-origin: 50% 0;
+        }
+
+        @keyframes rad-scale-down-fallback {
+            0% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+
+            75% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
+        .fonts-loaded .rad-scale-down.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        .fonts-loaded .rad-scale-down.rad-animate {
+            animation-name: rad-scale-down;
+            animation-duration: 1.1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-scale-down {
+            0% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="src/css/rad-icon.css">
+
+    <link rel="stylesheet" href="src/css/main.css">
+
+    <link rel="stylesheet" href="src/css/custom.css">
+
+
+
+
+
+
 </head>
+
 <body>
-<!-- Header -->
-<header class="hero is-white is-small">
-    <div class="hero-body has-text-centered">
-        <h1 class="title">Nicola Annunziata</h1>
-        <p class="subtitle">Student | Computer Science</p>
+
+<header class="header fixed-top rad-animation-group header--sticky header--sticky-triggered" id="header">
+    <div class="container rad-fade-in rad-waiting rad-animate" style="animation-delay: 0.1s;">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="src/assets/logonicola.png" alt="Nicola Annunziata" height="80" />
+                </a>
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #header" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-scroll="" class="nav-link" href="#about">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-scroll="" class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-scroll="" class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary cv-button" href="src/assets/CV NICOLA ANNUNZIATA.pdf" target="_blank">
+                            <img class="icon-img" src="src/assets/CV.svg" alt="CV Icon" />
+                            GET MY CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </header>
 
-<!-- Navbar -->
-<nav class="navbar is-spaced is-light">
+
+
+
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+    <div class="rad-showcase__bg">
+        <img class="lozad img-responsive" src="" data-src="src/assets/showcase.png" data-srcset="src/assets/showcase.png 1x, src/assets/showcase.png 2x" alt="" srcset="src/assets/showcase.png 1x, src/assets/showcase.png 2x" data-loaded="true">
+    </div>
     <div class="container">
-        <div class="navbar-menu is-active">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#about">Who I Am</a>
-                <a class="navbar-item" href="#projects">Projects</a>
-                <a class="navbar-item" href="#contact">Contact</a>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+                <h1 class="display-1">
+                    Hello, I’m Nicola.
+                    <br>
+                    <span>Software Engineer | Student </span>
+                </h1>
+                <p class="lead">
+                    I'm a Software Engineer and Student based in Naples, Italy
+                </p>
+                <a href="mailto:nicolaannunziata2000@gmail.com" class="btn btn-primary">
+                    <img class="icon-img" src="src/assets/contact.png" alt="Contact Icon" />
+                    Contact
+                </a>
+
+            </div>
+        </div>
+        <div class="row platform-links">
+            <div class="row platform-links">
+                <div class="col-12">
+
+                    <a href="https://www.linkedin.com/in/nicola-annunziata/" target="_blank">
+                        <img class="icon-img" src="src/assets/linkedin.svg" alt="LinkedIn">
+                    </a>
+
+                    <a href="https://github.com/NicolaAnnu" target="_blank">
+                        <img class="icon-img" src="src/assets/github.svg" alt="GitHub">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="rad-showcase__bg rad-showcase__bg--mobile">
+        <img class="lozad img-responsive" src="src/assets/showcase.png" data-src="src/assets/showcase.png" alt="" data-loaded="true">
+    </div>
+</section>
+
+
+<section class="section rad-animation-group pb-0" id="about">
+    <div class="container rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+        <div class="row d-flex flex-column-reverse flex-md-row">
+            <div class="about__profile-picture col-12 col-md-6">
+                <img class="lozad img-responsive image-left-overflow" src="src/assets/stickernicolamontecarlo.jpg" data-src="src/assets/stickernicolamontecarlo.jpg" data-srcset="src/assets/stickernicolamontecarlo.jpg 1x, src/assets/stickernicolamontecarlo.jpg 2x" alt="Profile Picture" srcset="src/assets/stickernicolamontecarlo.jpg 1x, src/assets/stickernicolamontecarlo.jpg 2x" data-loaded="true">
+            </div>
+            <div class="col-12 col-md-6 my-auto my-auto">
+                <h2>Who am I?</h2>
+                <p class="lead">
+                </p><p class="lead"> </p><p class="lead"> I am a highly motivated and passionate Computer Science student, always looking for new job opportunities. During my university career, I gained solid experience in front-end and back-end programming, database management, and object-oriented programming. Furthermore, I have a strong interest in the field of Artificial Intelligence, with a particular focus on Machine Learning, an area I consider fundamental for the development of intelligent systems and data-driven decision making. I find Machine Learning especially fascinating because it enables systems to learn from data and improve their performance over time, offering powerful solutions in a wide range of applications. I constantly strive to improve my technical skills and develop my interpersonal skills, knowing that success in the professional world requires a combination of both. I enjoy facing new daily challenges and am always looking for opportunities that push me to grow both personally and professionally. </p>
+                <p></p>
+                <a href="https://www.linkedin.com/in/nicola-annunziata/" target="_blank" class="btn btn-primary">
+                    <img class="icon-img" src="src/assets/linkedinblue.svg" alt="Linkedin Icon" />
+                    Let's connect
+                </a>
             </div>
         </div>
     </div>
-</nav>
-
-<section id="about" class="section">
-    <div class="container">
-        <h2 class="title has-text-centered">Who I Am</h2>
-        <p class="content has-text-centered">
-            <p>
-        I am a highly motivated and passionate Computer Science student, always looking for new job opportunities.
-        During my university career, I gained solid experience in front-end and back-end programming, database management,
-        object-oriented programming. Furthermore, I have a keen interest in the world of CyberSecurity,
-        with a particular focus on cryptography and networks,
-        two areas that I consider fundamental for data protection and cybersecurity. I find cryptography fascinating,
-        as it offers solutions to ensure the privacy and integrity of information,
-        while networks are at the heart of secure digital communications.
-
-        I constantly strive to improve my technical skills and develop my interpersonal skills,
-        knowing that success in the world of work requires a combination of both.
-        I love facing new daily challenges and I am always looking for stimuli that push me to grow both personally and professionally.
-        </p>
-    </div>
 </section>
 
-<section id="projects" class="section">
+
+
+
+<section class="section section--border-bottom rad-animation-group">
     <div class="container">
-        <h2 class="title has-text-centered">Projects</h2>
-        <!-- Project Rodent -->
-        <div class="box">
-            <div class="navbar-brand is-flex is-align-items-center">
-                <a class="navbar-item">
-                    <img src="src/assets/Rodent%20Logo.svg" alt="site logo" style="max-height: 70px" class="py-1 px-1">
-                </a>
-                <h3 class="title is-4 ml-3">RODENT</h3>
+        <div class="row rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+            <div class="col-12">
+                <h2>Education</h2>
+                <div class="row pt-2 pt-md-4">
+
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2021-2025</div>
+                            <div class="education__title">University of Salerno</div>
+                            <div class="education__degree">
+                                Bachelor Degree Computer Science
+                            </div>
+                            <div class="education__description">
+                                Relevant coursework: Data Structures and Algorithms, Database Systems, Operating Systems, Computer Networks, Software Engineering, Discrete Mathematics, Mathematical Logic.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <p>
-                Rodent is a university project developed as part of the Software Technologies for the Web course.
-                It stands out for its specialization in providing a wide range of products dedicated to rodent owners,
-                including rabbits, dwarf rabbits, hamsters, etc. The goal is to offer a complete and satisfying shopping
-                experience for all small pet lovers, ensuring quality products and customer service attentive to their needs.
-            </p>
-            <p>GitHub: <a href="https://github.com/NicolaAnnu/Rodent" target="_blank" class="has-text-link">Rodent</a></p>
+        </div>
+    </div>
+</section><section id="portfolio" class="section section--border-bottom">
+    <div class="container">
+        <div class="row row--padded rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
+
+            <!-- Titolo sopra -->
+            <div class="col-12">
+                <h2>My Project</h2>
+            </div>
+
+            <!-- Progetto sotto -->
+            <div class="col-12 col-md-4 mt-4">
+                <div class="project">
+                    <a href="https://github.com/NicolaAnnu/Rodent" target="_blank">
+                        <img class="lozad img-responsive"
+                             src="https://github-readme-stats.vercel.app/api/pin?username=NicolaAnnu&repo=Rodent&cache_bust=1"
+                             alt="Rodent repository GitHub"
+                             data-loaded="true">
+                    </a>
+                </div>
+
+        </div>
+
         </div>
     </div>
 </section>
 
-<section id="contact" class="section">
+
+
+
+
+
+
+
+
+<section id="contact" class="section section--contact pt-0">
     <div class="container">
-        <h2 class="title has-text-centered">Contact</h2>
-        <div class="content has-text-centered">
-            <p>Email: <a href="mailto:nicolaannunziata2000@gmail.com" class="has-text-link">nicolaannunziata2000@gmail.com</a></p>
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="https://formspree.io/f/xgvoaaed" method="POST">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="name" id="full_name" placeholder="Full Name">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" name="email" id="email" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="message" id="message" cols="30" rows="3" placeholder="Type Your Message Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <img class="icon-img me-2" src="src/assets/send.svg" alt="Send icon" />
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
 
-            <p class="has-text-centered">
-                <!-- Pulsante LinkedIn -->
-                <a href="https://www.linkedin.com/in/nicola-annunziata/" target="_blank" class="button is-link is-outlined">
-        <span class="icon">
-            <!-- Icona LinkedIn -->
-            <img src="src/assets/linkedin.svg" alt="LinkedIn Icon" class="icon-image">
-        </span>
-                    <span>LinkedIn</span>
-                </a>
-
-                <!-- Pulsante GitHub -->
-                <a href="https://github.com/NicolaAnnu" target="_blank" class="button is-dark is-outlined">
-        <span class="icon">
-            <!-- Icona GitHub -->
-            <img src="src/assets/github.svg" alt="GitHub Icon" class="icon-image">
-        </span>
-                    <span>GitHub</span>
-                </a>
-            </p>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4></h4>
+                    <span></span>
+                    <h4>Email</h4>
+                    <span><a href="mailto:nicolaannunziata2000@gmail.com">nicolaannunziata2000@gmail.com</a></span>
+                    <h4></h4>
+                    <span></span>
+                </div>
+            </div>
         </div>
-        </div>
+    </div>
 </section>
-<!-- Footer -->
+
+
+
+
+
+
+
 <footer class="footer">
-    <div class="content has-text-centered">
-        <p>© 2024 Nicola Annunziata. All rights reserved.</p>
+    <div class="container">
+        <div class="footer__left">
+            <div class="footer__copy">
+                © Nicola Annunziata. All rights reserved.
+            </div>
+        </div>
+        <div class="footer__links">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">ABOUT</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#portfolio">PORTFOLIO</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
     </div>
 </footer>
-</body>
-</html>
+
+<script src="src/js/library/lozad.min.js"></script>
+<script src="src/js/raid-animation.js"></script>
+<script>
+    window.addEventListener("load", function() {
+        var observer = window.lozad(".lozad", {
+            rootMargin: window.innerHeight / 2 + "px 0px",
+            threshold: 0.01
+        });
+        observer.observe();
+    });
+</script>
+<script src="src/js/library/jquery-3.3.1.slim.min.js"></script>
+<script src="src/js/library/bootstrap.min.js"></script>
+<script src="src/js/sticky-header.js"></script>
+<script src="src/js/library/smooth-scroll.polyfills.min.js"></script>
+<script src="src/js/library/fontfaceobserver.js"></script>
+<script>
+    (function(w) {
+
+        if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+            return;
+        }
+        var fontA = new w.FontFaceObserver("Inter", {
+            weight: 300
+        });
+        var fontB = new w.FontFaceObserver("Inter", {
+            weight: 400
+        });
+        var fontC = new w.FontFaceObserver("Inter", {
+            weight: 500
+        });
+        var fontD = new w.FontFaceObserver("Inter", {
+            weight: 600
+        });
+        var fontE = new w.FontFaceObserver("Inter", {
+            weight: 700
+        });
+        var fontF = new w.FontFaceObserver("Inter", {
+            weight: 900
+        });
+        w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+            w.document.documentElement.className += " fonts-loaded";
+        });
+    })(this);
+</script>
+<script>
+    const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+        const navbar = $('.navbar-collapse');
+        if (navbar && navbar.hasClass('show')) {
+            $('.navbar-toggler').click();
+        }
+    })
+</script>
+
+
+
+
+</body></html>

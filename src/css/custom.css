@@ -1,0 +1,8 @@
+/* You can customize theme styles here */
+.cv-button {
+    color: white !important;
+}
+
+.cv-button:hover {
+    color: black !important;
+}
