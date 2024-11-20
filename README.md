@@ -12,8 +12,4 @@ Questo progetto rappresenta il mio sito web personale, dove puoi scoprire chi so
 - **CSS3**  
 - **Framework CSS: Bulma**
 
-## Come Visualizzare il Progetto  
-1. Vai al link: [https://nicolaannu.github.io/portfolioNicolaAnnunziata/](https://nicolaannu.github.io/portfolioNicolaAnnunziata/).  
-2. Esplora le sezioni per saperne di più su di me!  
-
 Work in progress...
