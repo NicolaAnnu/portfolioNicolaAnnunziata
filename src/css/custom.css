@@ -4,5 +4,20 @@
 }
 
 .cv-button:hover {
-    color: black !important;
+    color: #000000 !important;
+}
+.icon-img {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+    .icon-img {
+        width: 1.2em;  /* ~19px */
+        height: 1.2em;
+    }
 }

@@ -34,6 +34,54 @@ pre,textarea {
     -webkit-appearance: none
 }
 
+@font-face {
+    font-family: AutumnMoon;
+    src: url(../fonts/autumn-moon/AutumnMoon.woff) format("woff"),url(../fonts/autumn-moon/AutumnMoon.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/inter/Inter-Light.woff2) format("woff2"),url(../fonts/inter/Inter-Light.woff) format("woff")
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/inter/Inter-Regular.woff2) format("woff2"),url(../fonts/inter/Inter-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/inter/Inter-Medium.woff2) format("woff2"),url(../fonts/inter/Inter-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/inter/Inter-SemiBold.woff2) format("woff2"),url(../fonts/inter/Inter-SemiBold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/inter/Inter-Bold.woff2) format("woff2"),url(../fonts/inter/Inter-Bold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/inter/Inter-ExtraBold.woff2) format("woff2"),url(../fonts/inter/Inter-ExtraBold.woff) format("woff")
+}
 
 @-webkit-keyframes right-to-left {
     0% {
@@ -534,6 +582,9 @@ pre {
     margin-bottom: 1rem
 }
 
+img {
+    border-style: none
+}
 
 table {
     border-collapse: collapse
@@ -4127,7 +4178,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap
 }
@@ -11507,18 +11558,4 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,textar
     .rad-showcase+section {
         margin-top: -125px
     }
-    .icon-img {
-        width: 1.5em; /* Dimensione regolabile */
-        height: 1.5em;
-        vertical-align: middle; /* Allinea l'immagine al testo */
-    }
-    @media (max-width: 768px) {
-        .btn {
-            width: 1.5em; /* oppure 24px */
-            height: 1.5em;
-        }
-    }
-
-
-
 }
