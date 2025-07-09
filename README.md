@@ -10,6 +10,6 @@ Questo progetto rappresenta il mio sito web personale, dove puoi scoprire chi so
 ## Tecnologie Utilizzate  
 - **HTML5**  
 - **CSS3**  
-- **Framework CSS: Bulma**
+- **Javascript**
 
 Work in progress...
